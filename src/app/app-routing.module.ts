@@ -8,7 +8,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/homepage/homepage.module').then((m) => m.HomepageModule),
   },
-  { path: 'profilo', loadChildren: () => import('./pages/profilo/profilo.module').then(m => m.ProfiloModule) },
+  {
+    path: 'profilo',
+    loadChildren: () =>
+      import('./pages/profilo/profilo.module').then((m) => m.ProfiloModule),
+  },
 ];
 
 @NgModule({
