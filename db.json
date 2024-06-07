@@ -58,6 +58,54 @@
     {
       "id": 1,
       "film": {
+        "id": 2,
+        "title": "The Godfather",
+        "year": 1972,
+        "director": "Francis Ford Coppola",
+        "genre": "Crime",
+        "poster": "https://picsum.photos/100",
+        "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+      }
+    },
+    {
+      "id": 2,
+      "film": {
+        "id": 2,
+        "title": "The Godfather",
+        "year": 1972,
+        "director": "Francis Ford Coppola",
+        "genre": "Crime",
+        "poster": "https://picsum.photos/100",
+        "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+      }
+    },
+    {
+      "id": 3,
+      "film": {
+        "id": 2,
+        "title": "The Godfather",
+        "year": 1972,
+        "director": "Francis Ford Coppola",
+        "genre": "Crime",
+        "poster": "https://picsum.photos/100",
+        "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+      }
+    },
+    {
+      "id": 4,
+      "film": {
+        "id": 3,
+        "title": "The  Knight",
+        "year": 2008,
+        "director": "Christ. Nolan",
+        "genre": "Action",
+        "poster": "https://picsum.photos/100",
+        "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept"
+      }
+    },
+    {
+      "id": 5,
+      "film": {
         "id": 3,
         "title": "The  Knight",
         "year": 2008,

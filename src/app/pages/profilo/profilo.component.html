@@ -43,5 +43,23 @@
       </p>
     </div>
   </div>
-  <div class="col" *ngFor="let preferito of filmsPrefer"></div>
+  <div class="row row-cols-5 mt-3">
+    <div class="col" *ngFor="let preferito of filmsPrefer">
+      <div class="card">
+        <img [src]="preferito.film.poster" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ preferito.film.title }}</h5>
+          <p class="card-text">genre: {{ preferito.film.genre }}</p>
+          <p class="card-text">Anno: {{ preferito.film.year }}</p>
+          <p class="card-text">Director: {{ preferito.film.director }}</p>
+          <p class="card-text">
+            <button class="btn buttonColor p-1 mt-1 text-light">
+              Aggiungi a preferiti
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"></div>
 </div>

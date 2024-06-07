@@ -16,46 +16,32 @@ export class CardComponent {
   constructor(private preferSvc: FilmpreferService) {}
 
   ngOnInit() {
-    if (this.cardFilm && this.userId) {
-      this.preferSvc
-        .getFavouriteByUserId(this.userId)
-        .subscribe((preferences) => {
-          const favorite = preferences.find(
-            (pref) => pref.userId === this.cardFilm!.id
-          );
-          this.isFavorite = !!favorite;
-          this.favoriteId = favorite?.userId ?? null;
-        });
-    }
+    this.preferSvc.film$.subscribe((prefer) => {
+      if (prefer && prefer.film && this.cardFilm) {
+        this.isFavorite =
+          prefer.film.id === this.cardFilm.id && prefer.userId === this.userId;
+        this.favoriteId = prefer.id;
+      } else {
+        this.isFavorite = false;
+        this.favoriteId = null;
+      }
+    });
   }
 
   toggleFavorite() {
     if (this.cardFilm && this.userId !== null) {
       if (this.isFavorite && this.favoriteId !== null) {
-        this.preferSvc.delete(this.favoriteId).subscribe(
-          () => {
-            this.isFavorite = false;
-            this.favoriteId = null;
-          },
-          (error) => {
-            console.error(
-              "Errore durante l'eliminazione dai preferiti 😥",
-              error
-            );
-          }
-        );
+        this.preferSvc.delete(this.favoriteId).subscribe(() => {
+          this.isFavorite = false;
+          this.favoriteId = null;
+        });
       } else {
         this.preferSvc
           .create({ id: null, userId: this.userId, film: this.cardFilm })
-          .subscribe(
-            (prefer) => {
-              this.isFavorite = true;
-              this.favoriteId = prefer.id;
-            },
-            (error) => {
-              console.error("Errore durante l'aggiunta ai preferiti😥", error);
-            }
-          );
+          .subscribe((prefer) => {
+            this.isFavorite = true;
+            this.favoriteId = prefer.id;
+          });
       }
     } else {
       console.log('Big fail! 😥');
