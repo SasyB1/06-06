@@ -25,10 +25,10 @@
             >
           </li>
           <li class="nav-item">
-            <a *ngIf="isLoggedIn" class="nav-link" routerLink="auth">Accedi</a>
+            <a *ngIf="!isLoggedIn" class="nav-link" routerLink="auth">Accedi</a>
           </li>
 
-          <li *ngIf="!isLoggedIn" ngbDropdown class="nav-item dropdown">
+          <li *ngIf="isLoggedIn" ngbDropdown class="nav-item dropdown">
             <button
               class="nav-link dropdown-toggle"
               type="button"

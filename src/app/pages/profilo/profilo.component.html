@@ -35,12 +35,15 @@
       </div>
     </div>
     <div class="col-6 bg-home mt-2 fadeInRight text-light">
-      <h4 class="mt-4">Perchè sceglierci?</h4>
+      <h4 class="mt-4">Vuoi continuare la visione?</h4>
       <p>
         "Perché limitarsi a un solo film quando puoi avere accesso a cinque?
         Resta con noi e lasciati trasportare in un viaggio cinematografico senza
         fine.(in realta' finisce che ne ho messi solo 5)"
       </p>
     </div>
+  </div>
+  <div class="col" *ngFor="let preferito of filmsPrefer">
+    <p>{{ preferito.id }}</p>
   </div>
 </div>

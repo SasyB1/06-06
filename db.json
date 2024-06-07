@@ -54,5 +54,22 @@
       "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept"
     }
   ],
-  "filmPrefers": []
+  "filmPrefers": [
+    {
+      "filmId": 3,
+      "id": 2
+    },
+    {
+      "filmId": 4,
+      "id": 3
+    },
+    {
+      "filmId": 5,
+      "id": 4
+    },
+    {
+      "filmId": 1,
+      "id": 5
+    }
+  ]
 }
