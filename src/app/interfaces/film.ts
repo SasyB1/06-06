@@ -1,6 +1,9 @@
 export interface iFilm {
   id: number;
-  gusto: string;
-  prezzo: number;
-  disponibile: boolean;
+  title: string;
+  year: number;
+  director: string;
+  genre: string;
+  poster: string;
+  plot: string;
 }

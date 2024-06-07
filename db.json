@@ -1,5 +1,40 @@
 {
-  "users": [],
-  "films": [],
+  "users": [
+    {
+      "email": "qemepahu@mailinator.com",
+      "password": "$2a$10$r9GeG8mAVLpIGSMZrdVqcOzEFECk5f7tpqJ5ZU2aR1MPs8D9bcWui",
+      "nome": "Ut aut optio cupida",
+      "id": 1
+    }
+  ],
+  "films": [
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "director": "Frank Darabont",
+      "genre": "Drama",
+      "poster": "https://picsum.photos/250",
+      "plot": "Two imprisoned"
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "year": 1972,
+      "director": "Francis Ford Coppola",
+      "genre": "Crime",
+      "poster": "https://picsum.photos/250",
+      "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "director": "Christopher Nolan",
+      "genre": "Action",
+      "poster": "https://picsum.photos/250",
+      "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept"
+    }
+  ],
   "filmPrefers": []
 }

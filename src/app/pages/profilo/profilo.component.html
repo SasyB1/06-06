@@ -1,1 +1,16 @@
-<p>profilo works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <h2>Benvenuto {{ user.nome }}</h2>
+          <p>Come andiamo?</p>
+          <!---->
+        </div>
+      </div>
+    </div>
+    <div class="col" *ngFor="let film of films">
+      <p>{{ film.title }}</p>
+    </div>
+  </div>
+</div>

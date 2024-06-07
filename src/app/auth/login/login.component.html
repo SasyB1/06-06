@@ -1,8 +1,6 @@
 <div class="container">
   <div class="card mt-5 w-50 m-auto">
-    <!-- Inizio Card -->
     <div class="card-body">
-      <!-- Inizio Card Body -->
       <div class="row flex-column flex-lg-row">
         <div
           class="col-12 col-lg-6 d-flex justify-content-center align-items-center"
@@ -30,22 +28,24 @@
                   type="email"
                   name="email"
                   placeholder="email"
+                  [(ngModel)]="authData.email"
                   class="form-control mt-2"
                 />
                 <input
                   type="password"
                   name="password"
                   placeholder="password"
+                  [(ngModel)]="authData.password"
                   class="form-control mt-3"
                 />
-                <button class="btn btn-success mt-3 mb-2">Accedi</button>
+                <button (click)="login()" class="btn btn-success mt-3 mb-2">
+                  Accedi
+                </button>
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Fine Card Body -->
   </div>
-  <!-- Fine Card -->
 </div>
