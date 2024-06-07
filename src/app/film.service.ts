@@ -6,7 +6,7 @@ import { iFilm } from './interfaces/film';
   providedIn: 'root',
 })
 export class FilmService {
-  apiUrl: string = 'http://localhost:3000/film';
+  apiUrl: string = 'http://localhost:3000/films';
   constructor(private http: HttpClient) {}
 
   getAll() {

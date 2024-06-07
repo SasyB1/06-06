@@ -1,6 +1,8 @@
 <div class="container">
-  <div class="row">
-    <div class="col">
+  <div class="row bg-home">
+    <div
+      class="col-6 d-flex flex-column justify-content-center align-items-center"
+    >
       <div class="row">
         <div class="col">
           <h2>Benvenuto {{ user.nome }}</h2>
@@ -9,8 +11,13 @@
         </div>
       </div>
     </div>
-    <div class="col" *ngFor="let film of films">
-      <p>{{ film.title }}</p>
+    <div class="col-6">
+      <img src="../../../assets/image/donnaconpopcorn.png" alt="" />
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col p-0 m-0" *ngFor="let film of films">
+      <app-card [cardFilm]="film"></app-card>
     </div>
   </div>
 </div>
