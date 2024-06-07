@@ -7,7 +7,10 @@
         <div class="col">
           <h2 class="color">Benvenuto {{ user.nome }}</h2>
           <p class="color">Come andiamo?</p>
-          <!---->
+          <p class="color">
+            <i class="bi bi-stopwatch-fill"></i> Sei pronto a guardare le nuove
+            uscite?
+          </p>
         </div>
       </div>
     </div>
@@ -43,14 +46,14 @@
       <p>
         "Perché limitarsi a un solo film quando puoi avere accesso a cinque?
         Resta con noi e lasciati trasportare in un viaggio cinematografico senza
-        fine.(in realta' finisce che ne ho messi solo 5)"
+        fine.(in realta' finisce perchè ne ho messi solo 5)"
       </p>
     </div>
   </div>
   <div class="row row-cols-5 mt-3">
     <div class="col-12 text-center fw-bold"><p>Lista Preferiti</p></div>
     <div
-      class="col-6 col-lg-2 d-flex justify-content-center"
+      class="col-6 col-lg-2 d-flex justify-content-center fadeInRight"
       *ngFor="let preferito of filmsPrefer"
     >
       <div class="card">
@@ -70,13 +73,14 @@
     </div>
   </div>
   <div class="row row-cols-5 mt-2">
-    <div class="col-12 text-center fw-bold"><p>Lista Amici</p></div>
+    <div class="col-12 text-center fw-bold"><p>Lista Utenti registrati</p></div>
     <div
       class="col d-flex justify-content-center mt-1"
       *ngFor="let user of users"
     >
       <div class="card bg-home text-light">
-        <div class="card-body">
+        <div class="card-body text-center">
+          <h5>{{ user.nome }}</h5>
           <p>{{ user.email }}</p>
         </div>
       </div>

@@ -25,6 +25,13 @@
             <div class="col mt-1">
               <form>
                 <input
+                  type="text"
+                  name="name"
+                  placeholder="name"
+                  [(ngModel)]="newUser.nome"
+                  class="form-control mt-2"
+                />
+                <input
                   type="email"
                   name="email"
                   placeholder="email"

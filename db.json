@@ -19,39 +19,10 @@
       "id": 3
     },
     {
-      "email": "wewu@mailinator.com",
-      "password": "$2a$10$RQEYTCoLk.9K5uobPxQAyukVa/TOlZZapWa7.MFs.eyuhB0XCMUmO",
-      "id": 4
-    },
-    {
-      "email": "panubejefy@mailinator.com",
-      "password": "$2a$10$80wHRNfd9.mWVC91MsjD.u.0mGr2QsyhEIfQHizJ3RQXIao/BE.ky",
-      "id": 5
-    },
-    {
-      "email": "koqizi@mailinator.com",
-      "password": "$2a$10$pg0qyE4q.9rM..E578F9ZO7LpxKv3bJVuZpsmP7CrxkLG2tgcjvDe",
-      "id": 6
-    },
-    {
-      "email": "muqel@mailinator.com",
-      "password": "$2a$10$JD4OQVbZCnuIGPIj034OMe6iFUGrXSY0MTqS6l9DCdycBp3AiN0Fu",
-      "id": 7
-    },
-    {
-      "email": "bomaw@mailinator.com",
-      "password": "$2a$10$ogvOtNs8whSmTKwcd8ZgsOB2mSLoGmttDS0rxQV1/0ea6142Ls2tG",
-      "id": 8
-    },
-    {
-      "email": "vatigot@mailinator.com",
-      "password": "$2a$10$/i5kSMRdJ26cP8mT.Em8sO3suIsiy00VsVgsKq.9xKSmphkRk2fjq",
-      "id": 9
-    },
-    {
-      "email": "xivaxinupo@mailinator.com",
-      "password": "$2a$10$zulO2oHZ3zCp0AoL2znggOac.VVK5d8ZGQ2YPhY86YiHrSa66wqvq",
-      "id": 10
+      "email": "wofa@mailinator.com",
+      "password": "$2a$10$YV.BiNsU3Go2rtWsW2gAlelOJOJuWJuJtyVbYGovKmg7IPkzNqlzK",
+      "nome": "Addison Barker",
+      "id": 11
     }
   ],
   "films": [
@@ -103,55 +74,7 @@
   ],
   "filmPrefers": [
     {
-      "id": 8,
-      "film": {
-        "id": 4,
-        "title": "The Rings",
-        "year": 2001,
-        "director": "Peter Jackson",
-        "genre": "Adventure",
-        "poster": "https://picsum.photos/100",
-        "plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."
-      }
-    },
-    {
-      "id": 9,
-      "film": {
-        "id": 3,
-        "title": "The  Knight",
-        "year": 2008,
-        "director": "Christ. Nolan",
-        "genre": "Action",
-        "poster": "https://picsum.photos/100",
-        "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept"
-      }
-    },
-    {
-      "id": 10,
-      "film": {
-        "id": 2,
-        "title": "The Godfather",
-        "year": 1972,
-        "director": "Francis Ford Coppola",
-        "genre": "Crime",
-        "poster": "https://picsum.photos/100",
-        "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
-      }
-    },
-    {
-      "id": 11,
-      "film": {
-        "id": 5,
-        "title": "The Dark ",
-        "year": 2008,
-        "director": "Giuseppe Tornatore",
-        "genre": "Action",
-        "poster": "https://picsum.photos/100",
-        "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept"
-      }
-    },
-    {
-      "id": 12,
+      "id": 1,
       "film": {
         "id": 1,
         "title": "The Shawshank",
