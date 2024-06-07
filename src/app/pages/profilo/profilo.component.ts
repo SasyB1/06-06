@@ -5,6 +5,7 @@ import { FilmService } from '../../film.service';
 import { iFilmPrefer } from '../../interfaces/film-prefer';
 import { iFilm } from '../../interfaces/film';
 import { FilmpreferService } from '../../filmprefer.service';
+import { UserService } from '../../user.service';
 
 @Component({
   selector: 'app-profilo',
@@ -15,11 +16,13 @@ export class ProfiloComponent {
   user!: iUser;
   films: iFilm[] = [];
   filmsPrefer: iFilmPrefer[] = [];
+  users: iUser[] = [];
 
   constructor(
     private authSvc: AuthService,
     private filmSvc: FilmService,
-    private preferSvc: FilmpreferService
+    private preferSvc: FilmpreferService,
+    private userSvc: UserService
   ) {}
 
   ngOnInit() {
@@ -31,6 +34,9 @@ export class ProfiloComponent {
       this.preferSvc.getAll().subscribe((prefer) => {
         this.filmsPrefer = prefer;
       });
+    });
+    this.userSvc.getAll().subscribe((users) => {
+      this.users = users;
     });
   }
 }

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { iUser } from '../../interfaces/user';
@@ -10,10 +11,11 @@ import { iUser } from '../../interfaces/user';
 export class RegisterComponent {
   newUser: Partial<iUser> = {};
 
-  constructor(private authSvc: AuthService) {}
+  constructor(private authSvc: AuthService, private router: Router) {}
 
   register() {
-    this.authSvc.register(this.newUser).subscribe();
-    console.log(this.newUser);
+    this.authSvc.register(this.newUser).subscribe(() => {
+      this.router.navigate(['/auth/login']);
+    });
   }
 }

@@ -14,12 +14,15 @@ const routes: Routes = [
     path: 'profilo',
     loadChildren: () =>
       import('./pages/profilo/profilo.module').then((m) => m.ProfiloModule),
+    canActivate: [AuthGuard],
+    canActivateChild: [AuthGuard],
   },
   {
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
+    canActivate: [GuestGuard],
+    canActivateChild: [GuestGuard],
   },
-  { path: 'shared', loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule) },
 ];
 
 @NgModule({
