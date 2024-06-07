@@ -31,12 +31,16 @@ export class ProfiloComponent {
     });
     this.filmSvc.getAll().subscribe((films) => {
       this.films = films;
-      this.preferSvc.getAll().subscribe((prefer) => {
-        this.filmsPrefer = prefer;
-      });
+    });
+    this.preferSvc.getAll().subscribe((prefer) => {
+      this.filmsPrefer = prefer;
     });
     this.userSvc.getAll().subscribe((users) => {
       this.users = users;
+    });
+
+    this.preferSvc.film$.subscribe((prefer) => {
+      if (prefer) this.filmsPrefer = prefer;
     });
   }
 }

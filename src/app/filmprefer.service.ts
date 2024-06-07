@@ -7,15 +7,21 @@ import { Observable, map, catchError, of, BehaviorSubject, tap } from 'rxjs';
   providedIn: 'root',
 })
 export class FilmpreferService {
-  filmSubject = new BehaviorSubject<null | iFilmPrefer>(null);
+  filmSubject = new BehaviorSubject<iFilmPrefer[]>([]);
   film$ = this.filmSubject.asObservable();
+  filmsArr: iFilmPrefer[] = [];
 
   apiUrl: string = 'http://localhost:3000/filmPrefers';
 
   constructor(private http: HttpClient) {}
 
   getAll() {
-    return this.http.get<iFilmPrefer[]>(this.apiUrl);
+    return this.http.get<iFilmPrefer[]>(this.apiUrl).pipe(
+      tap((films) => {
+        this.filmsArr = films;
+        this.filmSubject.next(films);
+      })
+    );
   }
 
   getFavouriteByUserId(userId: number) {
@@ -25,7 +31,8 @@ export class FilmpreferService {
   create(newPrefer: iFilmPrefer) {
     return this.http.post<iFilmPrefer>(this.apiUrl, newPrefer).pipe(
       tap((prefer) => {
-        this.filmSubject.next(prefer);
+        this.filmsArr.push(prefer);
+        this.filmSubject.next(this.filmsArr);
       })
     );
   }
@@ -33,7 +40,8 @@ export class FilmpreferService {
   delete(id: number) {
     return this.http.delete<void>(`${this.apiUrl}/${id}`).pipe(
       tap(() => {
-        this.filmSubject.next(null);
+        this.filmsArr = this.filmsArr.filter((film) => film.id !== id);
+        this.filmSubject.next(this.filmsArr);
       })
     );
   }

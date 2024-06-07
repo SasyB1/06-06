@@ -105,13 +105,13 @@
     {
       "id": 1,
       "film": {
-        "id": 2,
-        "title": "The Godfather",
-        "year": 1972,
-        "director": "Francis Ford Coppola",
-        "genre": "Crime",
+        "id": 1,
+        "title": "The Shawshank",
+        "year": 1994,
+        "director": "Frank Darabont",
+        "genre": "Drama",
         "poster": "https://picsum.photos/100",
-        "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+        "plot": "Two imprisoned"
       }
     },
     {
@@ -129,46 +129,34 @@
     {
       "id": 3,
       "film": {
-        "id": 2,
-        "title": "The Godfather",
-        "year": 1972,
-        "director": "Francis Ford Coppola",
-        "genre": "Crime",
+        "id": 3,
+        "title": "The  Knight",
+        "year": 2008,
+        "director": "Christ. Nolan",
+        "genre": "Action",
         "poster": "https://picsum.photos/100",
-        "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+        "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept"
       }
     },
     {
       "id": 4,
       "film": {
-        "id": 3,
-        "title": "The  Knight",
-        "year": 2008,
-        "director": "Christ. Nolan",
-        "genre": "Action",
+        "id": 4,
+        "title": "The Rings",
+        "year": 2001,
+        "director": "Peter Jackson",
+        "genre": "Adventure",
         "poster": "https://picsum.photos/100",
-        "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept"
+        "plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."
       }
     },
     {
       "id": 5,
       "film": {
-        "id": 3,
-        "title": "The  Knight",
+        "id": 5,
+        "title": "The Dark ",
         "year": 2008,
-        "director": "Christ. Nolan",
-        "genre": "Action",
-        "poster": "https://picsum.photos/100",
-        "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept"
-      }
-    },
-    {
-      "id": 6,
-      "film": {
-        "id": 3,
-        "title": "The  Knight",
-        "year": 2008,
-        "director": "Christ. Nolan",
+        "director": "Giuseppe Tornatore",
         "genre": "Action",
         "poster": "https://picsum.photos/100",
         "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept"
