@@ -2,8 +2,54 @@
   background-color: #9d9570;
 }
 
-h2,
-p {
+.color {
   color: white;
   text-shadow: 2px 2px 4px #000000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn ease 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+  animation: fadeInLeft ease 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fadeInRight {
+  animation: fadeInRight ease 2s;
+  animation-fill-mode: forwards;
 }

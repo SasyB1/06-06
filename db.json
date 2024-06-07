@@ -37,7 +37,7 @@
     },
     {
       "id": 4,
-      "title": "The Lord of the Rings",
+      "title": "The Rings",
       "year": 2001,
       "director": "Peter Jackson",
       "genre": "Adventure",
@@ -46,9 +46,9 @@
     },
     {
       "id": 5,
-      "title": "The Dark Knight",
+      "title": "The Dark ",
       "year": 2008,
-      "director": "Christ. Nolan",
+      "director": "Giuseppe Tornatore",
       "genre": "Action",
       "poster": "https://picsum.photos/100",
       "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept"

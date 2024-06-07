@@ -5,8 +5,8 @@
     >
       <div class="row">
         <div class="col">
-          <h2>Benvenuto {{ user.nome }}</h2>
-          <p>Come andiamo?</p>
+          <h2 class="color">Benvenuto {{ user.nome }}</h2>
+          <p class="color">Come andiamo?</p>
           <!---->
         </div>
       </div>
@@ -15,9 +15,32 @@
       <img src="../../../assets/image/donnaconpopcorn.png" alt="" />
     </div>
   </div>
-  <div class="row mt-5">
-    <div class="col p-0 m-0" *ngFor="let film of films">
+  <div class="row mt-3">
+    <div class="col-12 text-center mb-2">
+      <h4>Guarda i film che desideri</h4>
+    </div>
+    <div class="col p-0 m-0 fadeIn" *ngFor="let film of films">
       <app-card [cardFilm]="film"></app-card>
+    </div>
+  </div>
+  <div class="row mt-3 text-center">
+    <div class="col-6 p-0 mt-2 fadeInLeft">
+      <div class="card">
+        <div class="card-title"><h5 class="mt-4">Sempre Operativi</h5></div>
+        <div class="card-body">
+          <p><i class="bi bi-arrow-clockwise"></i> Zero lag</p>
+          <p><i class="bi bi-battery-half"></i> Zero consumi</p>
+          <p><i class="bi bi-bug-fill"></i> Zero bug</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 bg-home mt-2 fadeInRight text-light">
+      <h4 class="mt-4">Perchè sceglierci?</h4>
+      <p>
+        "Perché limitarsi a un solo film quando puoi avere accesso a cinque?
+        Resta con noi e lasciati trasportare in un viaggio cinematografico senza
+        fine.(in realta' finisce che ne ho messi solo 5)"
+      </p>
     </div>
   </div>
 </div>
