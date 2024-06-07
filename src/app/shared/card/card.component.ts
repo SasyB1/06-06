@@ -16,15 +16,15 @@ export class CardComponent {
   constructor(private preferSvc: FilmpreferService) {}
 
   ngOnInit() {
-    if (this.cardFilm && this.userId !== null) {
+    if (this.cardFilm && this.userId) {
       this.preferSvc
         .getFavouriteByUserId(this.userId)
         .subscribe((preferences) => {
           const favorite = preferences.find(
-            (pref) => pref.filmId === this.cardFilm!.id
+            (pref) => pref.userId === this.cardFilm!.id
           );
           this.isFavorite = !!favorite;
-          this.favoriteId = favorite ? favorite.id : null;
+          this.favoriteId = favorite?.userId ?? null;
         });
     }
   }
@@ -32,20 +32,33 @@ export class CardComponent {
   toggleFavorite() {
     if (this.cardFilm && this.userId !== null) {
       if (this.isFavorite && this.favoriteId !== null) {
-        this.preferSvc.delete(this.favoriteId).subscribe(() => {
-          this.isFavorite = false;
-          this.favoriteId = null;
-        });
+        this.preferSvc.delete(this.favoriteId).subscribe(
+          () => {
+            this.isFavorite = false;
+            this.favoriteId = null;
+          },
+          (error) => {
+            console.error(
+              "Errore durante l'eliminazione dai preferiti 😥",
+              error
+            );
+          }
+        );
       } else {
         this.preferSvc
-          .create({ userId: this.userId, filmId: this.cardFilm.id })
-          .subscribe((prefer) => {
-            this.isFavorite = true;
-            this.favoriteId = prefer.id;
-          });
+          .create({ id: null, userId: this.userId, film: this.cardFilm })
+          .subscribe(
+            (prefer) => {
+              this.isFavorite = true;
+              this.favoriteId = prefer.id;
+            },
+            (error) => {
+              console.error("Errore durante l'aggiunta ai preferiti😥", error);
+            }
+          );
       }
     } else {
-      console.log('f');
+      console.log('Big fail! 😥');
     }
   }
 }

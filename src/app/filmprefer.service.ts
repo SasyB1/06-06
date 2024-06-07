@@ -19,11 +19,11 @@ export class FilmpreferService {
     return this.http.get<iFilmPrefer[]>(`${this.apiUrl}?userId=${userId}`);
   }
 
-  create(newPrefer: Partial<iFilmPrefer>) {
+  create(newPrefer: iFilmPrefer) {
     return this.http.post<iFilmPrefer>(this.apiUrl, newPrefer);
   }
 
   delete(id: number) {
-    return this.http.delete(`${this.apiUrl}/${id}`);
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 }
