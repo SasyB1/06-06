@@ -1,0 +1,11 @@
+.container-fluid h2,
+.container-fluid p,
+h3 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.bg-cover {
+  background-image: linear-gradient(to top, #000000, #9d9570);
+  height: 75vh;
+}

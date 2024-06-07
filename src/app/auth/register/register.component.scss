@@ -1,0 +1,24 @@
+.container {
+  background-image: url("../../../assets/image/cinemar.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+
+  background-color: #9d9570;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInDown 2s ease-out;
+}
