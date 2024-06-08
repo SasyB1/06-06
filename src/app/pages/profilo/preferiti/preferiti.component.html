@@ -1,25 +1,28 @@
-<div
-  class="col-6 col-lg-2 d-flex justify-content-center fadeInRight"
-  *ngFor="let preferito of filmsPrefer"
->
-  <div class="card">
-    <img
-      [src]="preferito.film.poster"
-      class="card-img-top"
-      alt="Immagine poster"
-    />
-    <div class="card-body">
-      <h5 class="card-title">{{ preferito.film.title }}</h5>
-      <p class="card-text">genre: {{ preferito.film.genre }}</p>
-      <p class="card-text">Anno: {{ preferito.film.year }}</p>
-      <p class="card-text">Director: {{ preferito.film.director }}</p>
-      <p class="card-text">
-        <button
-          (click)="preferito.id !== null ? removePrefer(preferito.id) : null"
-        >
-          Aggiungi a preferiti
-        </button>
-      </p>
+<div class="container-fluid bg-home">
+  <div class="row">
+    <div class="col-12 text-center color"><h3>Lista dei preferiti</h3></div>
+    <div
+      class="col d-flex justify-content-center fadeIn w-100 p-0 my-5"
+      *ngFor="let preferito of filmsPrefer"
+    >
+      <div class="card text-bg-dark">
+        <img [src]="preferito.film.poster" class="card-img" alt="..." />
+        <div class="card-img-overlay">
+          <h5 class="card-title color">{{ preferito.film.title }}</h5>
+          <p class="card-text">genre: {{ preferito.film.genre }}</p>
+          <p class="card-text">Director: {{ preferito.film.director }}</p>
+          <p class="card-text">
+            <button
+              class="btn bg-home text-light px-2 py-1 position-absolute bottom-0 start-0 mb-1 ms-1"
+              (click)="
+                preferito.id !== null ? removePrefer(preferito.id) : null
+              "
+            >
+              Rimuovi dai preferiti
+            </button>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -1,0 +1,28 @@
+img {
+  width: 250px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn ease 2s;
+  animation-fill-mode: forwards;
+}
+
+.bg-home {
+  background-color: #9d9570;
+}
+
+.color {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}

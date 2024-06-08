@@ -74,15 +74,15 @@
   ],
   "filmPrefers": [
     {
-      "id": 1,
+      "id": 3,
       "film": {
-        "id": 1,
-        "title": "The Shawshank",
-        "year": 1994,
-        "director": "Frank Darabont",
-        "genre": "Drama",
+        "id": 3,
+        "title": "The  Knight",
+        "year": 2008,
+        "director": "Christ. Nolan",
+        "genre": "Action",
         "poster": "https://picsum.photos/100",
-        "plot": "Two imprisoned"
+        "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept"
       }
     }
   ]
