@@ -51,7 +51,14 @@
     </div>
   </div>
   <div class="row row-cols-5 mt-3">
-    <div class="col-12 text-center fw-bold"><p>Lista Preferiti</p></div>
+    <div class="col-12 text-center fw-bold">
+      <p class="m-0">Lista Preferiti</p>
+    </div>
+    <div class="col-12 mb-1 text-center">
+      <button class="btn bg-home text-light px-2 py-1" routerLink="preferiti">
+        Completa
+      </button>
+    </div>
     <div
       class="col-6 col-lg-2 d-flex justify-content-center fadeInRight"
       *ngFor="let preferito of filmsPrefer"
@@ -68,9 +75,7 @@
           <p class="card-text">Anno: {{ preferito.film.year }}</p>
           <p class="card-text">Director: {{ preferito.film.director }}</p>
           <p class="card-text">
-            <button class="btn buttonColor p-1 mt-1 text-light">
-              Aggiungi a preferiti
-            </button>
+            <button>Aggiungi a preferiti</button>
           </p>
         </div>
       </div>

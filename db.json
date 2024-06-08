@@ -3,25 +3,25 @@
     {
       "email": "qemepahu@mailinator.com",
       "password": "$2a$10$r9GeG8mAVLpIGSMZrdVqcOzEFECk5f7tpqJ5ZU2aR1MPs8D9bcWui",
-      "nome": "Ut aut optio cupida",
+      "nome": "Michele",
       "id": 1
     },
     {
       "email": "jisiryly@mailinator.com",
       "password": "$2a$10$7Hm0.fUXTia35mbjktEVfOlqCHFXncp3eepPBTCvb/Qcm1SKKwM46",
-      "nome": "Dolorem adipisicing ",
+      "nome": "Franco ",
       "id": 2
     },
     {
       "email": "tafovygoqa@mailinator.com",
       "password": "$2a$10$/zi5FPsk2hCVMHwVXbITp.PuZ/vI08TFz7bNczIIFvognkMbohsxi",
-      "nome": "In in perspiciatis ",
+      "nome": "Giuseppe ",
       "id": 3
     },
     {
       "email": "wofa@mailinator.com",
       "password": "$2a$10$YV.BiNsU3Go2rtWsW2gAlelOJOJuWJuJtyVbYGovKmg7IPkzNqlzK",
-      "nome": "Addison Barker",
+      "nome": "Alessia",
       "id": 11
     }
   ],
@@ -72,18 +72,5 @@
       "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept"
     }
   ],
-  "filmPrefers": [
-    {
-      "id": 1,
-      "film": {
-        "id": 1,
-        "title": "The Shawshank",
-        "year": 1994,
-        "director": "Frank Darabont",
-        "genre": "Drama",
-        "poster": "https://picsum.photos/100",
-        "plot": "Two imprisoned"
-      }
-    }
-  ]
+  "filmPrefers": []
 }

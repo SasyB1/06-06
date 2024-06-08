@@ -1,0 +1,25 @@
+<div
+  class="col-6 col-lg-2 d-flex justify-content-center fadeInRight"
+  *ngFor="let preferito of filmsPrefer"
+>
+  <div class="card">
+    <img
+      [src]="preferito.film.poster"
+      class="card-img-top"
+      alt="Immagine poster"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ preferito.film.title }}</h5>
+      <p class="card-text">genre: {{ preferito.film.genre }}</p>
+      <p class="card-text">Anno: {{ preferito.film.year }}</p>
+      <p class="card-text">Director: {{ preferito.film.director }}</p>
+      <p class="card-text">
+        <button
+          (click)="preferito.id !== null ? removePrefer(preferito.id) : null"
+        >
+          Aggiungi a preferiti
+        </button>
+      </p>
+    </div>
+  </div>
+</div>
