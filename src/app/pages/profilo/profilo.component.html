@@ -17,7 +17,7 @@
     <div class="col-6">
       <img
         src="../../../assets/image/donnaconpopcorn.png"
-        alt=""
+        alt="Signorina con popcorn"
         class="img-fluid"
       />
     </div>
@@ -57,7 +57,11 @@
       *ngFor="let preferito of filmsPrefer"
     >
       <div class="card">
-        <img [src]="preferito.film.poster" class="card-img-top" alt="..." />
+        <img
+          [src]="preferito.film.poster"
+          class="card-img-top"
+          alt="Immagine poster"
+        />
         <div class="card-body">
           <h5 class="card-title">{{ preferito.film.title }}</h5>
           <p class="card-text">genre: {{ preferito.film.genre }}</p>
